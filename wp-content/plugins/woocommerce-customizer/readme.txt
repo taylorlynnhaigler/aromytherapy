@@ -1,12 +1,12 @@
 === WooCommerce Customizer ===
-Contributors: SkyVerge, maxrice, tamarazuk, chasewiseman, nekojira
+Contributors: SkyVerge, maxrice, tamarazuk, chasewiseman, nekojira, beka.rice
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=paypal@skyverge.com&item_name=Donation+for+WooCommerce+Customizer
-Tags: woocommerce, woocommerce shop, woocommerce filters
+Tags: woocommerce, woocommerce shop, woocommerce filters, woocommerce text
 Requires at least: 4.1
-Tested up to: 4.5.2
-Requires WooCommerce at least: 2.4.13
-Tested WooCommerce up to: 2.6.0
-Stable tag: 2.3.1
+Tested up to: 4.7.3
+WC requires at least: 2.5.5
+WC tested up to: 3.0
+Stable tag: 2.4.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -18,22 +18,22 @@ WooCommerce includes tons of filters to let you customize button text, labels, a
 code to use them. This plugin provides a settings page where you can add your customizations and save them without
 needing to write any code or modify any templates, which is helpful for quick change testing.
 
-> Requires WooCommerce 2.4.13+
+> **Requires** WooCommerce 2.5.5+
 
 Here are some customizations you can make:
 
-*   Add to Cart button text for all product types (within the shop loop and on a single product page)
-*   The number of products displayed per page
-*   Heading text for the 'Product Description' and 'Additional Information' tab.
-*   Checkout page coupon / login text
-*   Checkout page "Create Account" checkbox default
-*   Checkout page 'Submit Order' button text
-*   Tax Label text
-*   Placeholder image source
+* Add to Cart button text for different product types (within the shop loop and on a single product page)
+* The number of products displayed per page
+* Heading text for the 'Product Description' and 'Additional Information' tab.
+* Checkout page coupon / login text
+* Checkout page "Create Account" checkbox default
+* Checkout page 'Submit Order' button text
+* Tax Label text
+* Placeholder image source
 
 To make these changes, go to **WooCommerce &gt; Settings** and view the "Customizer" tab.
 
-> **Note**: This plugin does not support multisite and cannot be network activated. To use this on a multisite network, you must install the plugin individually on each site.
+> **Note**: This plugin does not support multisite and cannot be network activated. To use this on a multisite network, you must activate the plugin individually on each site.
 
 = Support Details =
 We do support our free plugins and extensions, but please understand that support for premium products takes priority. We typically check the forums every few days (with a maximum delay of one week).
@@ -45,7 +45,7 @@ We do support our free plugins and extensions, but please understand that suppor
 
 == Installation ==
 
-1. Upload `woocommerce-customizer` folder to the `/wp-content/plugins/` directory or upload the zip file via the "Plugins &gt; Add New" menu
+1. You can (a) Search Plugins &gt; Add New for "WooCommerce Customizer", (b) Upload `woocommerce-customizer` folder to the `/wp-content/plugins/` directory, or (c) upload the zip file via the "Plugins &gt; Add New" menu
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Go to the 'Customizer' tab under WooCommerce &gt; Settings
 4. Start customizing!
@@ -58,7 +58,7 @@ Most likely because a filter does not yet exist within WooCommerce, or a filter 
 
 = Why don't the settings show up under the WooCommerce Settings? =
 
-Do you have this network activated for a multisite installation? If so, you'll need to remove the plugin, then install it on each child site as needed, as the plugin does not support being network activated.
+Do you have this network activated for a multisite installation? If so, you'll need to remove the plugin, then activate it on each child site as needed, as the plugin does not support being network activated.
 
 = I found a bug! What do I do? =
 
@@ -73,6 +73,12 @@ Yes! Fork the plugin on [GitHub](https://github.com/skyverge/woocommerce-customi
 1. Settings Page for customizations galore!
 
 == Changelog ==
+
+= 2.4.0 =
+* Fix - Image placeholder replacements are only shown in the shop, not in the WP admin
+* Localization - Includes Persian translation, props [Saakhtani team](http://saakhtani.ir/)!
+* Misc - Added support for WooCommerce 3.0
+* Misc - Removed support for WooCommerce 2.4
 
 = 2.3.1 =
 * Fix - Fixes "headers already sent" error if WooCommerce is out of date

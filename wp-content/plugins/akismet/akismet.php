@@ -61,3 +61,12 @@ require_once( AKISMET__PLUGIN_DIR . 'wrapper.php' );
 if ( defined( 'WP_CLI' ) && WP_CLI ) {
 	require_once( AKISMET__PLUGIN_DIR . 'class.akismet-cli.php' );
 }
+
+function spoofee_custom_variation_price( $price, $product ) {
+$target_product_types = array('variable');
+if ( in_array ( $product->product_type, $target_product_types ) ) {
+return '$'.$product->min_variation_price;
+}
+return $price;
+}
+add_filter('woocommerce_get_price_html', 'spoofee_custom_variation_price', 10, 2);

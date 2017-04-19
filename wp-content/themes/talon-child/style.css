@@ -1,0 +1,76 @@
+/*
+ Theme Name:   Talon Theme Child
+ Theme URI:    http://example.com/talon-child/
+ Description:  Talon Child Theme
+ Author:       Taylor Haigler
+ Author URI:   http://www.taylorhaigler.com
+ Template:     talon
+ Version:      1.0.0
+ Tags:         responsive-layout, accessibility-ready
+ Text Domain:  talon-theme-child
+*/
+
+@import url("../talon/style.css");
+
+.post-type-archive-product #sidebar {              display: none; 
+}
+
+.widget-title span {
+    text-transform: capitalize !important;
+    font-size: 22px !important; 
+}
+.fpw-page-title {
+    text-align: center;
+    color: #3772fe !important;
+}
+.fpw-read-more-link {
+    color: #3772fe !important;
+}
+.fpw-excerpt p {
+    text-align: center;
+}
+.mobile-branding .site-title {
+    display: none;
+}
+.mobile-branding .site-description {
+    display: none;
+}
+.mobile-branding {
+    background-color: #ededed;
+}
+.mobile-menu {
+    background-color: #ededed;
+}
+.mobile-menu a {
+    color: #4f5d75;
+}
+[off-canvas] {
+    background-color: #ededed;
+}
+.main-navigation a {
+    text-transform: capitalize;
+}
+.fpw-excerpt p {
+    margin-top: 20px;
+}
+.type-product h2 {
+    display: none;
+}
+content-area col-md-9 {
+    width: 100%
+} 
+.woocommerce #primary {
+    width: 90%
+}
+.orderby {
+    display: none;
+}
+.woocommerce-result-count {
+    display: none;
+}
+.site-info {
+    color: #ededed;
+}
+.site-info a {
+    display: none;
+}
