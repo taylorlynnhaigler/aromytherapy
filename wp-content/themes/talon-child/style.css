@@ -1,16 +1,17 @@
 /*
- Theme Name:   Talon Theme Child
- Theme URI:    http://example.com/talon-child/
+ Theme Name:   Talon Child
+ Theme URI:    http://athemes.com/theme/talon
  Description:  Talon Child Theme
  Author:       Taylor Haigler
- Author URI:   http://www.taylorhaigler.com
+ Author URI:   http://athemes.com / http://taylorhaigler.com
  Template:     talon
- Version:      1.0.0
- Tags:         responsive-layout, accessibility-ready
- Text Domain:  talon-theme-child
+ Version:      1.05
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags: two-columns, right-sidebar, custom-colors, portfolio, full-width-template, custom-background, custom-header, custom-menu, custom-logo, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
+ Text Domain:  talon
 */
 
-@import url("../talon/style.css");
 
 .post-type-archive-product #sidebar {              display: none; 
 }
@@ -53,12 +54,6 @@
 .fpw-excerpt p {
     margin-top: 20px;
 }
-.type-product h2 {
-    display: none;
-}
-content-area col-md-9 {
-    width: 100%
-} 
 .woocommerce #primary {
     width: 90%
 }
@@ -74,3 +69,45 @@ content-area col-md-9 {
 .site-info a {
     display: none;
 }
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+    color: #2d3142;
+}
+.woocommerce ul.products li.product .price {
+    color: #2d3142;
+}
+#footer-menu{
+    display: block;
+    width: auto;
+    text-align: center;
+}
+.site-info {
+    display: none;
+}
+.footer-navigation {
+    width: 100%;
+}
+.site-footer a {
+    font-size: 20px;
+}
+@media (max-width: 991px) {
+  .site-title {
+    font-size: 24px !important;
+  }
+}
+
+.sku {
+display: none;
+}
+
+.posted_in {
+display: none;
+}
+
+.tagged_as {
+display: none;
+}
+
+.product_meta {
+display: none;
+}
+

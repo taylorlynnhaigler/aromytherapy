@@ -4,7 +4,7 @@ Theme URI: http://athemes.com/theme/talon
 Author: aThemes
 Author URI: http://athemes.com
 Description: Talon is a multipurpose business theme built using the latest technologies. It's equally suited for both freelancers or companies and features an optimum level of customization oportunities.
-Version: 1.04
+Version: 1.05
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: talon
@@ -2494,14 +2494,6 @@ img {
 .wp-custom-header .wp-custom-header-video-button:focus {
 	outline: none;
 }
-/*--------------------------------------------------------------
-## woocommerce
---------------------------------------------------------------*/
-.post-type-archive-product #sidebar { 
-	display: none; 
-}
-
-
 /*--------------------------------------------------------------
 ## Responsive
 --------------------------------------------------------------*/

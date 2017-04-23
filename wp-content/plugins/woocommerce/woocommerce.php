@@ -650,3 +650,12 @@ function WC() {
 
 // Global for backwards compatibility.
 $GLOBALS['woocommerce'] = WC();
+
+function spoofee_custom_variation_price( $price, $product ) {
+$target_product_types = array('variable');
+if ( in_array ( $product->product_type, $target_product_types ) ) {
+return '$'.$product->min_variation_price;
+}
+return $price;
+}
+add_filter('woocommerce_get_price_html', 'spoofee_custom_variation_price', 10, 2);
