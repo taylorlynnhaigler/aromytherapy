@@ -13,9 +13,11 @@
 */
 
 
-.post-type-archive-product #sidebar {              display: none; 
-}
+/* customized code for the woocommerce sidebar on homepage*/
 
+.post-type-archive-product #sidebar {              
+    display: none; 
+}
 .widget-title span {
     text-transform: capitalize !important;
     font-size: 22px !important; 
@@ -30,6 +32,9 @@
 .fpw-excerpt p {
     text-align: center;
 }
+
+/* adjustments to the header and menu for mobile */
+
 .mobile-branding .site-title {
     display: none;
 }
@@ -69,30 +74,15 @@
 .site-info a {
     display: none;
 }
+
+
+/* Woocommerce product page */
+
 .woocommerce div.product p.price, .woocommerce div.product span.price {
     color: #2d3142;
 }
 .woocommerce ul.products li.product .price {
     color: #2d3142;
-}
-#footer-menu{
-    display: block;
-    width: auto;
-    text-align: center;
-}
-.site-info {
-    display: none;
-}
-.footer-navigation {
-    width: 100%;
-}
-.site-footer a {
-    font-size: 20px;
-}
-@media (max-width: 991px) {
-  .site-title {
-    font-size: 24px !important;
-  }
 }
 
 .sku {
@@ -110,4 +100,33 @@ display: none;
 .product_meta {
 display: none;
 }
+
+
+/* Footer */
+
+#footer-menu{
+    display: block;
+    width: auto;
+    text-align: center;
+}
+.site-info {
+    display: none;
+}
+.footer-navigation {
+    width: 100%;
+}
+.site-footer a {
+    font-size: 20px;
+}
+
+
+
+/* Media Queries */
+
+@media (max-width: 991px) {
+  .site-title {
+    font-size: 24px !important;
+  }
+}
+
 
